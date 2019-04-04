@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+        <div>
+            <span role="heading">01 CUSTOMER INFO</span>
+                <div>
+                    <form action="..." method="POST" autocomplete="on">
+                        <fieldset>
+                            <legend>Customer Information</legend>
+                            <div>
+                                <label for="fname">First name</label>
+                                <input type="text" id="fname" required>
+                            </div>
+                            <div>
+                                <label for="lname">Last name</label>
+                                <input type="text" id="lname">
+                            </div>
+                            <div class="col-12">
+                                <label for="address">Address</label>
+                                <input type="text" id="address" required>
+                            </div>
+                            <div>
+                            <legend>Country</legend>
+                            <select>
+                                    <option id="country" selected>Select your country</option>
+                                </select>
+                            <div>
+                                <label for="ciudad">City</label>
+                                <input type="text" id="ciudad" required>
+                            </div>
+                            <div>
+                            <label for="pcode">Postal code</label>
+                            <input type="text" id="pcode" required>
+                            <input type="button" value="FIND">   
+                            </div>
+                        </fieldset> 
+
+                        <i class="fa-narrow"></i><a href="#">Return to shop</a>
+                        <button type="submit">CONTINUE TO SHIPPING</button>
+                    </form>
+                </div>
+        </div>
+        <div>
+                <span role="heading">02 SHIPPING INFORMATION</span>
+                    <div>
+                        <address>
+                            Jamy Larson<br>
+                            Unit 2 Green Mount Retail Park<br>
+                            Halifax<br>
+                            HX1 5QN<br>
+                            Tel:  0344 332 5931<br>
+                        </address>
+                        <a href="#">Edit address</a> <span>•</span><a href="#">Add new</a>
+                    </div>
+                    <div>
+                    <span role="heading">Shipping Method</span>
+                    <fieldset>
+                         <input type="checkbox" id="standard" name="carrier" checked>
+                         <label for="standard">Standart Delivery <small><strong>Free</strong></small></label>
+                         <p>Estimated 14-20 Day Shipping (Duties and taxes may be due upon delivery)</p>
+                    </fieldset>
+                    <fieldset>
+                        <input type="checkbox" id="fast" name="carrier">
+                        <label for="fast">Fast Delivery <small><strong>€ 8.00</strong></small></label>
+                        <p>Estimated 2-5 Days Shipping (Duties and taxes may be due upon delivery)</p>
+                    </fieldset>
+                    </div>
+                        <i class="fa-narrow"></i><a href="#">Back to customer info</a>
+                        <button type="submit">CONTINUE TO PAYMENT</button>
+        </div>
+
+        <div>
+            <span role="heading">03 PAYMENT SELECTION</span>
+            <form action="...">
+                <fieldset>
+                    <div>
+                        <img src="logo-tajetas.jpg" width="80" height="20">
+                        <input type="radio" id="ccard" name="pago" checked>
+                        <label for="ccard">Credit Card</label>
+                        <p>Safe money transfer using your bank account. Visa, Maestro, Discover, American Express.</p>
+                    </div>
+                    <div>
+                        <label for="cnumber">CARD NUMBER</label>
+                        <input type="number" maxlength="19" id="cnumber" placeholder="0000 0000 0000 0000" required><span class="icono"></span>   
+                    </div>
+                    <div>
+                        <label for="namecard">NAME OF CARD</label>
+                        <input type="text" id="namecard" required>
+                        <label for="expdate">EXPERY DATE</label>
+                        <input type="datetime" placeholder="MM / YY" id="expdate">
+                        <label for="cvv">CVV code</label>
+                        <input type="number" maxlength="3" id="cvv" required><span>?</span>
+                    </div>
+                </fieldset>
+                <fieldset>
+                        <div>
+                            <img src="logo-paypal.jpg" width="80" height="20">
+                            <input type="radio" id="paypal" name="pago">
+                            <label for="paypal">Paypal</label>
+                            <p>You will be redirected to PayPal website to complete your purchase securely.</p>
+                        </div>
+                    </fieldset>
+
+                    <i class="fa-narrow"></i><a href="#">Back to shipping info</a>
+                    <button type="submit">COMPLETE ORDER</button>
+            </form>        
+        </div>
+<aside>
+        <span role="heading">Shopping Cart</span><span>2</span>
+        <div>
+            <img src="..." width="50" height="auto">
+            <p>Light College backpack</p>
+            <span>€ 99.90</span>
+        </div>
+        <div>
+            <img src="..." width="50" height="auto">
+            <p>Business casual Watch Waterproof</p>
+            <span>€ 69.90</span>
+        </div>
+        <div>
+                <label for="voucher" class="dropdown-flecha">Have a Voucher?</label>
+                 <div class="voucher-hidden">
+                    <input type="text" id="voucher">
+                 </div>
+        </div>
+        <div>
+            <p>Subtotal <span><strong>€ 169.89</strong></span> </p>
+            <p>Shipping <span><strong>free</strong></span> </p>
+        </div>
+        <div>
+            <p>Total <span><strong>€ 169.80</strong></span></p>
+        </div>
+</aside>
+</body>
+</html>
