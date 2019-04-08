@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Checkout</title>
+</head>
+<body>
+
+    <main>
+        <section class="section">
+        <div class="breadcrumbs">
+            <ol class="breadcrumbs__list">
+                    <li class="breadcrumbs__link breadbrumbs--active">customer Info</li>
+                    <li class="breadcrumbs__link breadbrumbs--disable">shipping Info</li>
+                    <li class="breadcrumbs__link breadbrumbs--disable">payment Info</li>
+            </ol>
+        </div>
+        <h1 class="title-section">Customer information</h1>
+   
+        <form action="..." class="form">
+            <div>
+                <label for="name" class="form__label">Name</label>
+                <input type="text" id="name" class="form__input">
+            </div>
+            <div>
+                <label for="lastname" class="form__label">Last name</label>
+                <input type="text" id="lastname" class="form__input">
+            </div>
+            <div>
+                <label for="address" class="form__label">Adress</label>
+                <input type="text" id="address" class="form__input">
+            </div>
+            <div>
+                <label for="country" class="form__label">Country</label>
+                <select id="country" class="form__select">
+                    <option class="form__option form--selected" selected>Select your country</option>
+                    <option class="form__option" value="">...</option>
+                    <option class="form__option" value="">...</option>
+                    <option class="form__option" value="">...</option>
+                </select>
+            </div>
+            <div>
+                <label for="city" class="form__label">City</label>
+                <input type="text" class="form__input" id="city">
+            </div>
+            <fieldset class="form__fieldset">
+                <label for="postalcode" class="form__label">Postal code</label>
+                <input type="text" id="postalcode" class="form__input">
+                <button type="button" class="btn form__button-find">Find</button>
+            </fieldset>
+            <div>
+                <label for="phone" class="form__label">Phone</label>
+                <input type="tel" id="phone" class="form__input">
+            </div>
+            <a href="#"><span class="link">Return to shop</span></a>
+            <button type="submit" class="btn btn__info">Continue to shopping</button>
+        </form>
+    </section>
+    <aside class="section section__aside">
+        <h2 class="title-section">Shopping cart</h2>
+        <ul class="summary">
+            <li class="summary__group">
+                <img src="..." alt="" class="summary__img">
+                Light College backpack
+                <span class="summary__price">€ 99.90</span>
+            </li>
+            <li class="summary__group">    
+                <img src="..." alt="" class="summary__img">
+                Business casual Watch Waterproof
+                <span class="summary__price">€ 69.90</span>
+            </li>
+        </ul>
+        <div class="collapse">
+            <button type="button" class="collapse__btn" Have a voucher?></button>
+            <div class="collape__box">
+                <form action="..." class="form">
+                    <label for="vouchercode" class="form__label">Voucher code</label>
+                    <input type="text" id="vouchercode" class="form__input">
+                    <button type="button" class="btn btn__info">Apply</button>
+                </form>
+            </div>
+        </div>
+
+        <table class="table-summary">
+            <tr class="table-summary__list">
+                <th class="table-summay__concept" scope="row">Shipping</th>
+                <td class="table-summay__price">Free</td>
+            </tr>
+            <tr class="total">
+                <th class="table-summay__concept row">Total</th>
+                <td class="table-summay__price">€ 169.80</td>
+            </tr>
+
+
+        </table>
+
+    </aside>
+    </main>
+
+</body>
+</html>
