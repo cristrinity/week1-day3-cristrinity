@@ -1,0 +1,28 @@
+main {
+    max-width: 1180px;
+    display: flex;
+    justify-content: center;
+    align-content: content;
+    margin: 100px;
+    border: 1px solid #eee
+}
+section{
+    width: 80%;
+    padding-right: 100px;
+}
+aside {
+    width: 20%;
+}
+.breadcrumbs{
+    flex-wrap: wrap;
+
+    align-content: center
+}
+.breadcrumbs__list{
+    justify-content: center;
+    display: inline-flex;
+    width: 100%
+}
+.group-inputs{
+    
+}
